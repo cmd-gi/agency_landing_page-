@@ -4854,6 +4854,16 @@
     background-color: var(--color-yellow-300);
   }
 
+  .bg-yellow-300\/50 {
+    background-color: #ffe02a80;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-yellow-300\/50 {
+      background-color: color-mix(in oklab, var(--color-yellow-300) 50%, transparent);
+    }
+  }
+
   .bg-yellow-400 {
     background-color: var(--color-yellow-400);
   }
@@ -5700,6 +5710,11 @@
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
+  .to-yellow-400 {
+    --tw-gradient-to: var(--color-yellow-400);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
   .to-zinc-300\/30 {
     --tw-gradient-to: #d4d4d84d;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
@@ -5895,6 +5910,14 @@
     background-size: var(--width) var(--height);
   }
 
+  .bg-\[length\:0\%_2px\] {
+    background-size: 0% 2px;
+  }
+
+  .bg-\[length\:0\%_100\%\] {
+    background-size: 0% 100%;
+  }
+
   .bg-cover {
     background-size: cover;
   }
@@ -5905,6 +5928,18 @@
 
   .\[background-position\:50\%_50\%\,50\%_50\%\] {
     background-position: 50%, 50%;
+  }
+
+  .bg-bottom {
+    background-position: bottom;
+  }
+
+  .bg-left-bottom {
+    background-position: 0 100%;
+  }
+
+  .bg-no-repeat {
+    background-repeat: no-repeat;
   }
 
   .bg-repeat {
