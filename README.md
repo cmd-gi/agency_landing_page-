@@ -47,7 +47,7 @@ Make sure you have Node.js (version 20 or higher) and npm installed on your mach
 1.  **Clone the repository:**
     *(Remember to replace `your-username` with your actual GitHub username)*
     ```sh
-    git clone https://github.com/your-username/PeakinfoSolution.git
+    git clone https://github.com/cmd-gi/PeakinfoSolution.git
     cd PeakinfoSolution
     ```
 
