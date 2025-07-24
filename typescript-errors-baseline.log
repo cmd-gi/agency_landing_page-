@@ -1,0 +1,32 @@
+TypeScript Error Baseline Report
+Generated: $(Get-Date)
+Command: node ./node_modules/typescript/bin/tsc --noEmit
+
+========================================
+BASELINE TYPESCRIPT ERRORS
+========================================
+
+src/components/ui/spotlight-new.tsx:1:136 - error TS1109: Expression expected.
+
+1   gradientSecond = "radial-gradient(50% 50% at 50% 50%, hsla(210, 100%, 85%, .06) 0, hsla(210, 100%, 55%, .02) 80%, transparent 100%)",
+                                                                                                                                         
+
+
+Found 1 error in src/components/ui/spotlight-new.tsx:1
+
+========================================
+SUMMARY
+========================================
+Total TypeScript errors: 1
+Files with errors: 1
+- src/components/ui/spotlight-new.tsx (1 error)
+
+========================================
+ERROR BREAKDOWN
+========================================
+TS1109 - Expression expected: 1 occurrence
+
+========================================
+NOTES
+========================================
+This baseline was created by running TypeScript compiler in --noEmit mode to identify all current TypeScript errors in the repository. This log should be referenced and updated after each major change to track progress in eliminating TypeScript errors.
