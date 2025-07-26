@@ -86,19 +86,20 @@ export default function WithComparisonTable() {
                 {sections.map((section) => (
                   <li key={section.name}>
                     <ul role="list" className="space-y-4">
-                      {section.features.map((feature) =>
-                        feature.tiers[tier.name] ? (
+                      {section.features.map((feature) => {
+                        const tierValue = feature.tiers[tier.name as keyof typeof feature.tiers];
+                        return tierValue ? (
                           <li key={feature.name} className="flex gap-x-3">
                             <CheckIcon aria-hidden="true" className="h-6 w-5 flex-none text-indigo-600" />
                             <span>
                               {feature.name}{' '}
-                              {typeof feature.tiers[tier.name] === 'string' ? (
-                                <span className="text-sm/6 text-gray-500">({feature.tiers[tier.name]})</span>
+                              {typeof tierValue === 'string' ? (
+                                <span className="text-sm/6 text-gray-500">({tierValue})</span>
                               ) : null}
                             </span>
                           </li>
-                        ) : null,
-                      )}
+                        ) : null;
+                      })}
                     </ul>
                   </li>
                 ))}
@@ -185,25 +186,28 @@ export default function WithComparisonTable() {
                           {feature.name}
                           <div className="absolute inset-x-8 mt-4 h-px bg-gray-900/5" />
                         </th>
-                        {tiers.map((tier) => (
-                          <td key={tier.id} className="px-6 py-4 xl:px-8">
-                            {typeof feature.tiers[tier.name] === 'string' ? (
-                              <div className="text-center text-sm/6 text-gray-500">{feature.tiers[tier.name]}</div>
-                            ) : (
-                              <>
-                                {feature.tiers[tier.name] === true ? (
-                                  <CheckIcon aria-hidden="true" className="mx-auto size-5 text-indigo-600" />
-                                ) : (
-                                  <MinusIcon aria-hidden="true" className="mx-auto size-5 text-gray-400" />
-                                )}
+                        {tiers.map((tier) => {
+                          const tierValue = feature.tiers[tier.name as keyof typeof feature.tiers];
+                          return (
+                            <td key={tier.id} className="px-6 py-4 xl:px-8">
+                              {typeof tierValue === 'string' ? (
+                                <div className="text-center text-sm/6 text-gray-500">{tierValue}</div>
+                              ) : (
+                                <>
+                                  {tierValue === true ? (
+                                    <CheckIcon aria-hidden="true" className="mx-auto size-5 text-indigo-600" />
+                                  ) : (
+                                    <MinusIcon aria-hidden="true" className="mx-auto size-5 text-gray-400" />
+                                  )}
 
-                                <span className="sr-only">
-                                  {feature.tiers[tier.name] === true ? 'Included' : 'Not included'} in {tier.name}
-                                </span>
-                              </>
-                            )}
-                          </td>
-                        ))}
+                                  <span className="sr-only">
+                                    {tierValue === true ? 'Included' : 'Not included'} in {tier.name}
+                                  </span>
+                                </>
+                              )}
+                            </td>
+                          );
+                        })}
                       </tr>
                     ))}
                   </Fragment>

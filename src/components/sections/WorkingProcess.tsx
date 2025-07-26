@@ -65,7 +65,7 @@ const coreValues = [
 
 const WorkingProcess = () => {
   const [visibleItems, setVisibleItems] = useState(new Set())
-  const [hoveredItem, setHoveredItem] = useState(null)
+  const [hoveredItem, setHoveredItem] = useState<number | null>(null)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
