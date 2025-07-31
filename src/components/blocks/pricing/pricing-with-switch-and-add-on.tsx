@@ -4,7 +4,7 @@ import {
   IconCircleCheckFilled,
   IconMessageCircleQuestion,
 } from "@tabler/icons-react";
-import { classNames } from '@/utils/classNames';
+import { classNames } from '../../../utils/classNames';
 import { useState } from "react";
 import { motion } from "motion/react";
 

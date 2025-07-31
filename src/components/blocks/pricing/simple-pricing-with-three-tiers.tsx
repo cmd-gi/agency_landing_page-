@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { IconCheck, IconPlus } from "@tabler/icons-react";
-import { classNames } from '@/utils/classNames';
+import { classNames } from '../../../utils/classNames';
 
 export enum plan {
   hobby = "hobby",

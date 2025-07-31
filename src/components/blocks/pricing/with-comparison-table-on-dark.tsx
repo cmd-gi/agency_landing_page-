@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
 import { CheckIcon, MinusIcon } from '@heroicons/react/20/solid'
-import { classNames } from '@/utils/classNames'
+import { classNames } from '../../../utils/classNames'
 
 const tiers = [
   { name: 'Starter', id: 'tier-starter', href: '#', priceMonthly: '$19', mostPopular: false },

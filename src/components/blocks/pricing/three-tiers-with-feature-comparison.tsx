@@ -1,5 +1,5 @@
 import { CheckIcon, XMarkIcon } from '@heroicons/react/20/solid'
-import { classNames } from '@/utils/classNames'
+import { classNames } from '../../../utils/classNames'
 
 const tiers = [
   {

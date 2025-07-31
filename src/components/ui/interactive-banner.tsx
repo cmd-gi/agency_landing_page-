@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, useAnimation, useMotionValue, useTransform } from 'framer-motion';
-import { Button } from '@/components/ui/button';
+import { Button } from './button';
 import { ArrowRight, Sparkles, Zap, Target } from 'lucide-react';
 
 interface BannerProps {
