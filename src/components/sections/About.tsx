@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
+import { Button } from "../ui/button";
 import { Lightbulb, Palette, Target, Zap, Settings, Code } from "lucide-react";
 
 export default function About() {
