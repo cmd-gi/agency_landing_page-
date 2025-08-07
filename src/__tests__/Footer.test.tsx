@@ -1,5 +1,5 @@
-const { render, screen } = require('@testing-library/react');
-const Footer = require('../path/to/Footer'); // Adjust the path as necessary
+import { render, screen } from '@testing-library/react';
+import Footer from '../path/to/Footer'; // Adjust the path as necessary
 
 test('hello world!', () => {
 	render(<Footer />);
