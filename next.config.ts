@@ -13,7 +13,7 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  // Disable TypeScript checking during build for faster deployment
+  // Completely disable TypeScript checking during build
   typescript: {
     ignoreBuildErrors: true,
   },
