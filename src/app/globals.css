@@ -1,9 +1,8 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nunito+Sans:wght@300;400;500;600&family=Roboto:wght@400;500&display=swap');
 
-/* Import Tailwind CSS and tw-animate-css plugin */
+/* Import Tailwind CSS */
 @import "tailwindcss";
-@import "tw-animate-css";
 
 /* Custom animations */
 @keyframes float {

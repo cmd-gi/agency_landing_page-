@@ -87,7 +87,8 @@
         "@testing-library/jest-dom": "^6.6.4",
         "@testing-library/react": "^16.3.0",
         "@types/jest": "^30.0.0",
-        "@types/react": "^19",
+        "@types/node": "^24.2.0",
+        "@types/react": "^19.1.9",
         "@types/react-dom": "^19",
         "@types/react-syntax-highlighter": "^15.5.13",
         "@types/three": "^0.178.0",
@@ -98,7 +99,7 @@
         "jest-environment-jsdom": "^30.0.5",
         "postcss": "^8.4.38",
         "tw-animate-css": "^1.3.5",
-        "typescript": "^5"
+        "typescript": "^5.9.2"
       }
     },
     "node_modules/@adobe/css-tools": {
@@ -5052,13 +5053,13 @@
       "license": "MIT"
     },
     "node_modules/@types/node": {
-      "version": "24.1.0",
-      "resolved": "https://registry.npmjs.org/@types/node/-/node-24.1.0.tgz",
-      "integrity": "sha512-ut5FthK5moxFKH2T1CUOC6ctR67rQRvvHdFLCD2Ql6KXmMuCrjsSsRI9UsLCm9M18BMwClv4pn327UvB7eeO1w==",
+      "version": "24.2.0",
+      "resolved": "https://registry.npmjs.org/@types/node/-/node-24.2.0.tgz",
+      "integrity": "sha512-3xyG3pMCq3oYCNg7/ZP+E1ooTaGB4cG8JWRsqqOYQdbWNY4zbaV0Ennrd7stjiJEFZCaybcIgpTjJWHRfBSIDw==",
       "dev": true,
       "license": "MIT",
       "dependencies": {
-        "undici-types": "~7.8.0"
+        "undici-types": "~7.10.0"
       }
     },
     "node_modules/@types/offscreencanvas": {
@@ -5068,9 +5069,9 @@
       "license": "MIT"
     },
     "node_modules/@types/react": {
-      "version": "19.1.8",
-      "resolved": "https://registry.npmjs.org/@types/react/-/react-19.1.8.tgz",
-      "integrity": "sha512-AwAfQ2Wa5bCx9WP8nZL2uMZWod7J7/JSplxbTmBQ5ms6QpqNYm672H0Vu9ZVKVngQ+ii4R/byguVEUZQyeg44g==",
+      "version": "19.1.9",
+      "resolved": "https://registry.npmjs.org/@types/react/-/react-19.1.9.tgz",
+      "integrity": "sha512-WmdoynAX8Stew/36uTSVMcLJJ1KRh6L3IZRx1PZ7qJtBqT3dYTgyDTx8H1qoRghErydW7xw9mSJ3wS//tCRpFA==",
       "dev": true,
       "license": "MIT",
       "dependencies": {
@@ -14039,9 +14040,9 @@
       }
     },
     "node_modules/typescript": {
-      "version": "5.8.3",
-      "resolved": "https://registry.npmjs.org/typescript/-/typescript-5.8.3.tgz",
-      "integrity": "sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==",
+      "version": "5.9.2",
+      "resolved": "https://registry.npmjs.org/typescript/-/typescript-5.9.2.tgz",
+      "integrity": "sha512-CWBzXQrc/qOkhidw1OzBTQuYRbfyxDXJMVJ1XNwUHGROVmuaeiEm3OslpZ1RV96d7SKKjZKrSJu3+t/xlw3R9A==",
       "dev": true,
       "license": "Apache-2.0",
       "bin": {
@@ -14072,9 +14073,9 @@
       }
     },
     "node_modules/undici-types": {
-      "version": "7.8.0",
-      "resolved": "https://registry.npmjs.org/undici-types/-/undici-types-7.8.0.tgz",
-      "integrity": "sha512-9UJ2xGDvQ43tYyVMpuHlsgApydB8ZKfVYTsLDhXkFL/6gfkp+U8xTGdh8pMJv1SpZna0zxG1DwsKZsreLbXBxw==",
+      "version": "7.10.0",
+      "resolved": "https://registry.npmjs.org/undici-types/-/undici-types-7.10.0.tgz",
+      "integrity": "sha512-t5Fy/nfn+14LuOc2KNYg75vZqClpAiqscVvMygNnlsHBFpSXdJaYtXMcdNLpl/Qvc3P2cB3s6lOV51nqsFq4ag==",
       "dev": true,
       "license": "MIT"
     },
