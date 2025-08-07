@@ -25,6 +25,18 @@ const nextConfig: NextConfig = {
   experimental: {
     optimizePackageImports: ['@radix-ui/react-icons', 'lucide-react'],
   },
+  // Webpack configuration to help with module resolution
+  webpack: (config, { isServer }) => {
+    // Add resolve fallbacks for better module resolution
+    config.resolve.fallback = {
+      ...config.resolve.fallback,
+      fs: false,
+      net: false,
+      tls: false,
+    };
+    
+    return config;
+  },
 };
 
 export default nextConfig;
